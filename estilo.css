@@ -1,0 +1,94 @@
+/* Fuente y tamaño de texto */
+body {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #080606;
+  background-color: #4d4343;
+}
+/* Contenedor principal */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px;
+  background-color: #7789a4;
+  box-shadow: 0 0 5px rgba(7, 42, 124, 0.1);
+}
+/*  Hace referencia al estilo de los elementos de encabezado de segundo nivel <h2>*/
+h2 {
+  margin-top: 30px;
+  background-color: #2a2a2c;
+}
+/*  Para la lista con id "primera-lista", se establece el texto en negrita y el color del texto en negro.  */
+ul#primera-lista li {
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+}
+/* Para la lista con id "segunda-lista", el color del texto se establece en un tono de gris */
+ul#segunda-lista li {
+  color: rgb(244, 234, 234);
+}
+
+/* Secciones */
+.section {
+  margin-bottom: 40px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid #ccc;
+}
+
+.section:last-of-type {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: none;
+}
+/* Títulos de sección */
+.section h2 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 28px;
+  font-weight: 600;
+  color: #f2f1f1;
+}
+
+/*los elementos de lista no tendrán ningún estilo de viñeta (list-style: none)*/
+/*que el relleno izquierdo se establece en cero (padding-left: 0) */
+/*y que no habrá margen superior (margin-top: 0)*/
+.section ul {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 0;
+}
+/*Se establece la altura y el ancho de la imagen con las propiedades "height" y "width" respectivamente*/
+/*Además, se establece el margen superior y lateral con la propiedad "margin"*/
+/*con valores de -175px (arriba), 0px (derecha), 0px (abajo) y 500px (izquierda)*/
+.imagen {
+  background-image: url(Imagenes/img.jpg);
+  height: 250px;
+  margin: -175px 0px 0px 500px ;
+  width: 270px;
+}
+/*table tiene las propiedades border-collapse que indica que los bordes de las celdas*/
+/*deben fusionarse y margin que establece márgenes en todos los lados para centrar la*/
+/*tabla horizontalmente en la página*/
+table {
+  border-collapse: collapse;
+  margin: 0 auto;
+}
+/*td tiene varias propiedades de estilo, como width, height, text-align y */ 
+/*vertical-align, que establecen el tamaño y la posición de las celdas en la tabla. */ 
+td {
+  width: 150px;
+  height: 100px;
+  text-align: center;
+  vertical-align: middle;
+  /*border define un borde de 1px sólido en las celdas*/ 
+  border: 1px solid #ccc;
+  /*.font-size y font-weight establecen el tamaño y el peso de la fuente*/
+  font-size: 15px;
+  font-weight: bold;
+}
+/*.first-row tiene propiedades para cambiar el color de fondo y el color del texto de la primera fila de la tabla.*/
+.first-row {
+  background-color: rgb(51, 51, 54);
+  color: white; 
+}
